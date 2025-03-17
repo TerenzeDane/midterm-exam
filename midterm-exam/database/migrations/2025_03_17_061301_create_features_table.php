@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration {
     public function up() {
-        Schema::create('tbl_features', function (Blueprint $table) {
+        Schema::create('features', function (Blueprint $table) {
             $table->id(); // Primary key
             $table->string('name'); // Feature Name
             $table->text('description')->nullable(); // Feature Description
@@ -15,6 +15,6 @@ return new class extends Migration {
     }
 
     public function down() {
-        Schema::dropIfExists('tbl_features');
+        Schema::dropIfExists('features');
     }
 };

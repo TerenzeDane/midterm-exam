@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Feature extends Model {
     use HasFactory;
     
-    protected $table = 'tbl_features'; // Matches your database table
+    protected $table = 'features'; // Matches your database table
     protected $fillable = ['name', 'description'];
 }

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class FeatureSeeder extends Seeder {
     public function run() {
-        DB::table('tbl_features')->insert([
+        DB::table('features')->insert([
             ['name' => 'Model', 'description' => 'Represents data and logic in MVC'],
             ['name' => 'View', 'description' => 'Handles presentation and UI rendering'],
             ['name' => 'Controller', 'description' => 'Controls request flow in Laravel'],
